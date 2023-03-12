@@ -5,6 +5,10 @@ import interior from './assets/001-interior-design.png'
 import architecture from './assets/002-blueprint.png'
 import planning from './assets//003-task.png'
 import interiorPick from './assets/interior-pick.jpg'
+import aboutPick from './assets/about-pick.jpg'
+import successPick from './assets/success-pick.png'
+
+
 
 
 function App() {
@@ -90,14 +94,61 @@ function App() {
 						</div>
 					</div>
 				</div>
-			</div>
-			<footer className="footer">
-				<div className="container footer__container">
-					<div className="footer__copyright">
-						Copyright @ 2020 <span>MVDNSX</span>.all right reserved.
+				<div className="about">
+					<div className="container about-container block">
+						<div className="about__left block__left">
+							<div className="about__title title">ABOUT US</div>
+							<div className="about__subtitle subtitle subtitle-big">Interioris The Will
+								of An Epoch Mextreo</div>
+							<div className="about__description description">There are many variations of passages of Lorem Ipsum available,
+								but the majority have suffered alteration in some form injected
+								humour, or randomised words which don't look even slightly
+								believable.If you are going to use a passage of Lorem Ipsum,
+								sure there isn't anything embarrassing hidden the middleof text.
+								All the Lorem Ipsum generators on the Internettend to repeat
+								predefined chunks as necessary,making this the first true
+								generator on the Internet.
+							</div>
+							<div className="about__btn btn block__btn"><a href="#">Learn more</a></div>
+						</div>
+						<div className="about__right block__right-border">
+							<img src={aboutPick} alt="pick" />
+						</div>
 					</div>
 				</div>
-			</footer>
+
+				<div className="success">
+					<div className="container success-container block-reverse">
+						<div className="success__left block__left">
+							<div className='success__year'>20</div>
+							<div className="success__subtitle subtitle subtitle-big"> Years Of Successful
+								Working
+								The Market</div>
+							<div className="success__btn btn block__btn"><a href="#">Read more</a></div>
+						</div>
+						<div className="success__right block__right-border">
+							<img src={successPick} alt="pick" />
+						</div>
+					</div>
+				</div>
+
+				<div className="subscribe">
+					<div className="container subscribe-container">
+						<div className="subscribe__subtitle subtitle">
+							DON’T FORGET TO SIGN UP
+						</div>
+						<div className="subscribe__description description">
+							Find out early about all upcoming promotions and new product releases with
+							our newsletter.
+						</div>
+						<div className="subscribe__form">
+							<input className='form__input' type="text" placeholder='Enter your email address.....' />
+							<button className='form__btn btn'>Subscribe</button>
+						</div>
+					</div>
+				</div>
+
+			</div>
 		</div>
 	);
 }
