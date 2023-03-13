@@ -1,12 +1,14 @@
 import React from 'react';
 import './App.css'
 import logo from './assets/logo.png'
-import interior from './assets/001-interior-design.png'
-import architecture from './assets/002-blueprint.png'
-import planning from './assets//003-task.png'
-import interiorPick from './assets/interior-pick.jpg'
-import aboutPick from './assets/about-pick.jpg'
-import successPick from './assets/success-pick.png'
+import interior from './assets/interior-pick.jpg'
+import design from './assets/001-interior-design.png'
+import architec from './assets/002-blueprint.png'
+import plan from './assets/003-task.png'
+import aboutpick from './assets/about-pick.jpg'
+import success from './assets/success-pick.png'
+
+
 
 
 
@@ -34,59 +36,49 @@ function App() {
 				</div>
 			</header>
 			<div className="content">
-				<div className="interior">
-					<div className="container interior-container">
-						<div className="interior__left">
-							<div className="interiot__title title">Modern interior</div>
-							<div className="intetior__subtitle subtitle subtitle-big">Create Your
-								Interior Design.</div>
-							<div className="interior__description description">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-								veniam, quis nostrud exercitation.
+				<div className="intr">
+					<div className="intr-container container">
+						<div className="intr__left">
+							<div className="intr__name">MODERN INTERIOR</div>
+							<div className="intr__title">Create Your Interior Design.</div>
+							<div className="intr__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.</div>
+							<a className='int__btn btn' href="#">Contact</a>
+						</div>
+						<div className="intr__rigth">
+							<div className="intr__pic">
+								<img src={interior} alt="interior" />
 							</div>
-							<div className="interior__btn btn"><a href="#">Contact</a></div>
 						</div>
-						<div className="interior__right">
-							<img src={interiorPick} alt="pick" />
-						</div>
-
 					</div>
 				</div>
 				<div className="service">
 					<div className="service-container container">
-						<div className="service__title title">What we do</div>
-						<div className="service__subtitle subtitle">Our Service</div>
-						<div className="service__cards">
-							<div className="card card-active">
-								<div className="card__logo">
-									<img src={interior} alt="" />
-								</div>
-								<div className="card__description">
+						<div className="service__name">WHAT WE DO</div>
+						<div className="service__title">Our Service</div>
+						<div className="service__cards card">
+							<div className="card__item">
+								<img src={design} alt="" className="card__logo" />
+								<div className="card__text">
 									<div className="card__title">Interior Design</div>
-									<div className="card__text">Lorem ipsum dolor amet consectetur
+									<div className="card_desc">Lorem ipsum dolor amet consectetur
 										adipiscing elit sed eiusmod tempor
 										incididunt ut labore.</div>
 								</div>
 							</div>
-							<div className="card">
-								<div className="card__logo">
-									<img src={architecture} alt="" />
-								</div>
-								<div className="card__description">
+							<div className="card__item">
+								<img src={architec} alt="" className="card__logo" />
+								<div className="card__text">
 									<div className="card__title">Architecture</div>
-									<div className="card__text">Lorem ipsum dolor amet consectetur
+									<div className="card_desc">Lorem ipsum dolor amet consectetur
 										adipiscing elit sed eiusmod tempor
 										incididunt ut labore.</div>
 								</div>
 							</div>
-							<div className="card">
-								<div className="card__logo">
-									<img src={planning} alt="" />
-								</div>
-								<div className="card__description">
+							<div className="card__item">
+								<img src={plan} alt="" className="card__logo" />
+								<div className="card__text">
 									<div className="card__title">Planning</div>
-									<div className="card__text">Lorem ipsum dolor amet consectetur
+									<div className="card_desc">Lorem ipsum dolor amet consectetur
 										adipiscing elit sed eiusmod tempor
 										incididunt ut labore.</div>
 								</div>
@@ -95,55 +87,67 @@ function App() {
 					</div>
 				</div>
 				<div className="about">
-					<div className="container about-container block">
-						<div className="about__left block__left">
-							<div className="about__title title">ABOUT US</div>
-							<div className="about__subtitle subtitle subtitle-big">Interioris The Will
-								of An Epoch Mextreo</div>
-							<div className="about__description description">There are many variations of passages of Lorem Ipsum available,
-								but the majority have suffered alteration in some form injected
-								humour, or randomised words which don't look even slightly
-								believable.If you are going to use a passage of Lorem Ipsum,
-								sure there isn't anything embarrassing hidden the middleof text.
-								All the Lorem Ipsum generators on the Internettend to repeat
-								predefined chunks as necessary,making this the first true
-								generator on the Internet.
+					<div className="about-container container">
+						<div className="about__stroke">
+							<div className="about__left">
+								<div className="about__pic">
+									<img src={aboutpick} alt="aboutpick" />
+								</div>
 							</div>
-							<div className="about__btn btn block__btn"><a href="#">Learn more</a></div>
+							<div className="about__right">
+								<div className="about__subtitle subtitle">About us</div>
+								<div className="about__title title">Interioris The Will
+									of An Epoch Mextreo</div>
+								<div className="about__desc desc">There are many variations of passages of Lorem Ipsum available,
+									but the majority have suffered alteration in some form injected
+									humour, or randomised words which don't look even slightly
+									believable.If you are going to use a passage of Lorem Ipsum,
+									sure there isn't anything embarrassing hidden the middleof text.
+									All the Lorem Ipsum generators on the Internettend to repeat
+									predefined chunks as necessary,making this the first true
+									generator on the Internet.</div>
+								<a className='int__btn btn' href="#">Learn More</a>
+							</div>
 						</div>
-						<div className="about__right block__right-border">
-							<img src={aboutPick} alt="pick" />
+						<div className="about__stroke about__stroke-reverse">
+							<div className="about__left">
+								<div className="about__pic about__pic-reverse">
+									<img src={success} alt="aboutpick" />
+								</div>
+							</div>
+							<div className="about__right">
+								<div className="about__years">20</div>
+								<div className="about__title title">Years Of Successful
+									Working
+									The Market</div>
+								<a className='int__btn int__btn-mt btn' href="#">Read More</a>
+							</div>
 						</div>
 					</div>
 				</div>
-
-				<div className="success">
-					<div className="container success-container block-reverse">
-						<div className="success__left block__left">
-							<div className='success__year'>20</div>
-							<div className="success__subtitle subtitle subtitle-big"> Years Of Successful
-								Working
-								The Market</div>
-							<div className="success__btn btn block__btn"><a href="#">Read more</a></div>
+				<div className="complete">
+					<div className="complete-container container">
+						<div className="complete__title title">
+							3000+ Completed Work
+							Which WE have Successfully Done
 						</div>
-						<div className="success__right block__right-border">
-							<img src={successPick} alt="pick" />
-						</div>
-					</div>
-				</div>
-
-				<div className="subscribe">
-					<div className="container subscribe-container">
-						<div className="subscribe__subtitle subtitle">
-							DON’T FORGET TO SIGN UP
-						</div>
-						<div className="subscribe__description description">
-							Find out early about all upcoming promotions and new product releases with
-							our newsletter.
-						</div>
-						<div className="subscribe__form">
-							<input className='form__input' type="text" placeholder='Enter your email address.....' />
-							<button className='form__btn btn'>Subscribe</button>
+						<div className="complete__info info">
+							<div className="info__item">
+								<div className="info__value">980</div>
+								<div className="info__name">Project</div>
+							</div>
+							<div className="info__item">
+								<div className="info__value">520</div>
+								<div className="info__name">Happy Client</div>
+							</div>
+							<div className="info__item">
+								<div className="info__value">330</div>
+								<div className="info__name">Winners</div>
+							</div>
+							<div className="info__item">
+								<div className="info__value">120</div>
+								<div className="info__name">Recoment</div>
+							</div>
 						</div>
 					</div>
 				</div>
