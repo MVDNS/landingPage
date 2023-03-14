@@ -7,6 +7,11 @@ import architec from './assets/002-blueprint.png'
 import plan from './assets/003-task.png'
 import aboutpick from './assets/about-pick.jpg'
 import success from './assets/success-pick.png'
+import louis from './assets/louis.jpg'
+import rekha from './assets/rekha.jpg'
+import trends from './assets/trends.jpg'
+import notable from './assets/notable.jpg'
+
 
 
 
@@ -151,8 +156,91 @@ function App() {
 						</div>
 					</div>
 				</div>
+				<div className="testimonials">
+					<div className="testimonials-container container">
+						<div className="testimonials__subtitle subtitle">Testimonials</div>
+						<div className="testimonials__title title">Client says about us</div>
+						<div className="testimonials__feedback feedback">
+							<div className="feedback__item">
+								<div className="feedback__foto">
+									<img src={louis} alt="" />
+								</div>
+								<div className="feedback__info">
+									<div className="feedback__person">Louis Saville <span className="feedback__position">/CEO at Google inc</span></div>
+									<div className="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+										elit, sed do eiusmod tempor incididunt ut labore
+										et dolore magna aliqua.</div>
+								</div>
+							</div>
+							<div className="feedback__item">
+								<div className="feedback__foto">
+									<img src={rekha} alt="" />
+								</div>
+								<div className="feedback__info">
+									<div className="feedback__person">Rekha Varadwaz <span className="feedback__position">/Manager at Nike inc</span></div>
+									<div className="feedback__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+										elit, sed do eiusmod tempor incididunt ut labore
+										et dolore magna aliqua.</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="news">
+					<div className="news-container container">
+						<div className="news__subtitle subtitle">Letest news</div>
+						<div className="news__title title">From Our Blog</div>
+						<div className="news__blog blog">
+							<div className="blog__item">
+								<div className="blog__header">
+									<div className="blog__pick">
+										<img src={trends} alt="" />
+									</div>
+								</div>
+								<div className="blog__content">
+									<div className="blog__title">2020 Interior Design Trends</div>
+									<div className="blog__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+										incididunt ut labore et dolore magna aliqua.</div>
+									<a className='blog__btn btn' href="#">Continue reading....</a>
+								</div>
 
+							</div>
+							<div className="blog__item">
+								<div className="blog__header">
+									<div className="blog__pick">
+										<img src={notable} alt="" />
+									</div>
+								</div>
+								<div className="blog__content">
+									<div className="blog__title">28 Notable Product at ARC Interior Design</div>
+									<div className="blog__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+										incididunt ut labore et dolore magna aliqua.</div>
+									<a className='blog__btn btn' href="#">Continue reading....</a>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className="subsrcibe">
+					<div className="subscribe-container container">
+						<div className="subscribe__title title">
+							DON’T FORGET TO SIGN UP
+						</div>
+						<div className="subscribe__desc desc">Find out early about all upcoming promotions and new product releases with
+							our newsletter.</div>
+						<div className="subscribe__form form">
+							<input className='form__input' type="text" placeholder='Enter your email address.....' />
+							<button className='form__btn btn'>Subscribe</button>
+						</div>
+					</div>
+				</div>
 			</div>
+			<footer className="footer">
+				<div className="footer-container container">
+
+				</div>
+			</footer>
 		</div>
 	);
 }
