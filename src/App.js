@@ -12,6 +12,10 @@ import rekha from './assets/rekha.jpg'
 import trends from './assets/trends.jpg'
 import notable from './assets/notable.jpg'
 
+import { FaTelegramPlane } from 'react-icons/fa'
+import { BsDiscord, BsTwitter, BsGithub } from 'react-icons/bs'
+
+
 
 
 
@@ -237,8 +241,59 @@ function App() {
 				</div>
 			</div>
 			<footer className="footer">
-				<div className="footer-container container">
+				<div className="footer__inform inform">
+					<div className="inform-container container">
+						<div className="inform__left">
+							<div className="inform__logo">
+								<img src={logo} alt="" />
+							</div>
+							<div className="inform__desc ft">
+								But i must explain to you all this mistaken
+								idea of dencouncing pleasure.
+							</div>
+						</div>
+						<div className="inform__right">
+							<div className="inform__item">
+								<div className="inform__header">Quick Links</div>
+								<div className="inform__row ft"><a href="#">About Our Company</a></div>
+								<div className="inform__row ft"><a href="#">Services WE provide</a></div>
+								<div className="inform__row ft"><a href="#">Career & Opportunity</a></div>
+								<div className="inform__row ft"><a href="#">Privacy & policy</a></div>
+								<div className="inform__row ft"><a href="#">Contact US</a></div>
+							</div>
+							<div className="inform__item">
+								<div className="inform__header">Company</div>
+								<div className="inform__row ft"><a href="#">About Company</a></div>
+								<div className="inform__row ft"><a href="#">Our Testimonial</a></div>
+								<div className="inform__row ft"><a href="#">Latest News</a></div>
+								<div className="inform__row ft"><a href="#">Our Mission</a></div>
+								<div className="inform__row ft"><a href="#">Get a free Quot</a></div>
+							</div>
+							<div className="inform__item">
+								<div className="inform__header">Contact us</div>
+								<div className="inform__row ft">Sagrada Familia, Herba</div>
+								<div className="inform__row ft">Street Front USA</div>
+								<div className="inform__row ft">brandoxide@gmail.com</div>
+								<div className="inform__row ft">002-568423591</div>
+							</div>
+							<div className="inform__item inform__item-social">
+								<div className="inform__header">Follow Us</div>
 
+								<div className="inform__row row">
+									<div className="row__items items">
+										<div className="row__item"><FaTelegramPlane /></div>
+										<div className="row__item"><BsGithub /></div>
+										<div className="row__item"><BsDiscord /></div>
+										<div className="row__item"><BsTwitter /></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<div className="footer__copyright">
+					Copyright @ 2023 <span><a href="https://github.com/MVDNSX" target='_blank'>MVDNSX</a></span>.all right reserved.
 				</div>
 			</footer>
 		</div>
